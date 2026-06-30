@@ -15,7 +15,7 @@ import testimonialOne from "./images/testmonial/testimonialOne.png";
 import testimonialTwo from "./images/testmonial/testimonialTwo.png";
 import quote from "./images/testmonial/quote.png"
 import contactImg from "./images/contact/contactImg.png"
-import profile from "./images/Profile-pic1.png"
+import profile from "./images/1000063517.png"
 
 export {
   logo,
