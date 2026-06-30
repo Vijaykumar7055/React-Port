@@ -42,10 +42,7 @@ const LeftBanner = () => {
         </h2>
 
         <p className="leading-6 text-base tracking-wide">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-          modi maxime non ratione quasi veritatis. Cum, ipsam, deleniti
-          dolorum assumenda ipsum tempora non vel omnis recusandae, dicta
-          corrupti soluta minus.
+          Hello Everyone! 👋 First of all, thank you for visiting my profile. My name is Vijay Kumar, and I am a passionate Full Stack Developer.
         </p>
       </motion.div>
 
