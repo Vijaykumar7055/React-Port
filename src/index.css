@@ -1,0 +1,130 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==============================
+   UNIQUE PORTFOLIO THEME
+   Emerald + Midnight + Violet
+================================ */
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply transition-colors duration-300;
+    background-color: #f4f7f2;
+    color: #17251f;
+  }
+
+  html.dark body {
+    background-color: #0b0f14;
+    color: #e5f5ec;
+  }
+
+  /* Selection color */
+  ::selection {
+    background-color: #10b981;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  /* Social icons */
+  .bannerIcon {
+    @apply w-16 h-16 inline-flex items-center justify-center
+    rounded-xl text-xl cursor-pointer
+    transition-all duration-300 hover:-translate-y-1;
+
+    background-color: #e1eee5;
+    color: #087f5b;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.10);
+  }
+
+  html.dark .bannerIcon {
+    background-color: #17251f;
+    color: #34d399;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.08);
+  }
+
+  .bannerIcon:hover {
+    background-color: #10b981;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.25);
+  }
+
+  /* Resume tabs */
+  .resumeLi {
+    @apply w-full h-20 flex items-center justify-center
+    text-xl cursor-pointer rounded-xl
+    border transition-all duration-300;
+
+    background-color: #e8eee8;
+    color: #52645a;
+    border-color: transparent;
+  }
+
+  html.dark .resumeLi {
+    background-color: #141c24;
+    color: #a5b8ad;
+  }
+
+  .resumeLi:hover {
+    background-color: #d7f5e5;
+    color: #087f5b;
+  }
+
+  html.dark .resumeLi:hover {
+    background-color: #19382c;
+    color: #6ee7b7;
+  }
+
+  /* Reusable transparent overlay */
+  .bgOpacity {
+    background-color: rgba(16, 185, 129, 0.08);
+  }
+
+  html.dark .bgOpacity {
+    background-color: rgba(52, 211, 153, 0.08);
+  }
+
+  /* Reusable premium cards */
+  .portfolioCard {
+    @apply rounded-2xl border p-6
+    transition-all duration-300;
+
+    background-color: #ffffff;
+    border-color: #dce8df;
+  }
+
+  html.dark .portfolioCard {
+    background-color: #111820;
+    border-color: #26372f;
+  }
+
+  .portfolioCard:hover {
+    border-color: #10b981;
+    transform: translateY(-5px);
+  }
+}
+
+/* Active navigation item */
+.active {
+  color: #059669;
+}
+
+html.dark .active {
+  color: #34d399;
+}
+
+/* Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 transparent;
+}
